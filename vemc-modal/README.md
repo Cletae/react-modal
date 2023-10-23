@@ -1,4 +1,4 @@
-# modal
+# vemc-modal
 
 ## Description
 
@@ -8,13 +8,13 @@ A modal pluggin for react using `create-react-app`.
 
 Run the following command:
 
-`npm install pop-up-modal`
+`npm install vemc-modal`
 
 ## How to use ?
 
 **1 - Import the pluggin :**
 
-`import {Modal} from "pop-up-modal"`
+`import {Modal} from "modal"`
 
 **2 - Use this state :**
 
