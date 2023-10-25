@@ -1,11 +1,9 @@
 import React, { useState } from "react";
-import Modal from "./lib/Modal";
+import { Modal } from "./lib/index";
 import "./App.css";
 
 function App() {
   const [displayModal, setDisplayModal] = useState(false);
-  console.log("coucou");
-  
 
   return (
     <div className="App">

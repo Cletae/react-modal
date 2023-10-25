@@ -3,7 +3,7 @@ import "./Modal.css";
 import PropTypes from "prop-types";
 import { FaTimes } from "react-icons/fa";
 
-const Modal = ({ showModal, hideModal }) => {
+export const Modal = ({ showModal, hideModal }) => {
   return (
     showModal && (
       <>
@@ -50,4 +50,3 @@ Modal.propTypes = {
   hideModal: PropTypes.func.isRequired,
 };
 
-export default Modal;
