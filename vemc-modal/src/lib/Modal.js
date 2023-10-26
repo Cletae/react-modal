@@ -1,59 +1,40 @@
 import React from "react";
-import "./modale.css";
+import "./Modal.css";
 import PropTypes from "prop-types";
+import { FaTimes } from "react-icons/fa";
 
-export const Modal = ({
-  showModal,
-  hideModal,
-  message,
-  title,
-  modalStyle,
-  modalHeaderStyle,
-  titleStyle,
-  modalBodyStyle,
-  modalFooterStyle,
-  xButtonStyle,
-  footerButton1Style,
-  footerButton2Style,
-  buttonText1,
-  buttonText2,
-}) => {
+export const Modal = ({ showModal, hideModal }) => {
   return (
     showModal && (
       <>
         <div className="modal-overlay">
           <div className="modal-wrapper">
-            <div className="modal" style={modalStyle}>
-              <div className="modal-header" style={modalHeaderStyle}>
-                <h3 style={titleStyle}>{title}</h3>
+            <div className="modal">
+              <div className="modal-header">
+                <h3>Enter your modal title here</h3>
                 <button
                   type="button"
-                  style={xButtonStyle}
                   className="modal-close-button"
                   onClick={hideModal}
                 >
-                  X
+                  <FaTimes />
                 </button>
               </div>
-              <div className="modal-body" style={modalBodyStyle}>
-                {message}
-              </div>
-              <div className="modal-footer" style={modalFooterStyle}>
+              <div className="modal-body">Hello, your message here</div>
+              <div className="modal-footer">
                 <button
                   type="button"
-                  className="modal-close-button-footer"
-                  style={footerButton1Style}
+                  className="modal-close-button1"
                   onClick={hideModal}
                 >
-                  {buttonText1}
+                  Ok
                 </button>
                 <button
                   type="button"
-                  className="modal-close-button-footer"
-                  style={footerButton2Style}
+                  className="modal-close-button2"
                   onClick={hideModal}
                 >
-                  {buttonText2}
+                  Cancel
                 </button>
               </div>
             </div>
@@ -68,3 +49,4 @@ Modal.propTypes = {
   showModal: PropTypes.bool.isRequired,
   hideModal: PropTypes.func.isRequired,
 };
+
