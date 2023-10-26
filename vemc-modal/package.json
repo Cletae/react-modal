@@ -1,9 +1,9 @@
 {
   "name": "vemc-modal",
-  "version": "0.2.5",
+  "version": "0.2.4",
   "private": false,
   "author": "Cletae",
-  "main": "dist/index.js",
+  "main": "index.js",
   "license": "ISC",
   "repository": {
     "type": "git",
