@@ -12,7 +12,11 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 const Modal = _ref => {
   let {
     showModal,
-    hideModal
+    hideModal,
+    title,
+    message,
+    buttonText1,
+    buttonText2
   } = _ref;
   return showModal && /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement("div", {
     className: "modal-overlay"
@@ -22,23 +26,23 @@ const Modal = _ref => {
     className: "modal"
   }, /*#__PURE__*/_react.default.createElement("div", {
     className: "modal-header"
-  }, /*#__PURE__*/_react.default.createElement("h3", null, "Enter your modal title here"), /*#__PURE__*/_react.default.createElement("button", {
+  }, /*#__PURE__*/_react.default.createElement("h3", null, title), /*#__PURE__*/_react.default.createElement("button", {
     type: "button",
     className: "modal-close-button",
     onClick: hideModal
   }, /*#__PURE__*/_react.default.createElement(_fa.FaTimes, null))), /*#__PURE__*/_react.default.createElement("div", {
     className: "modal-body"
-  }, "Hello, your message here"), /*#__PURE__*/_react.default.createElement("div", {
+  }, message), /*#__PURE__*/_react.default.createElement("div", {
     className: "modal-footer"
   }, /*#__PURE__*/_react.default.createElement("button", {
     type: "button",
     className: "modal-close-button1",
     onClick: hideModal
-  }, "Ok"), /*#__PURE__*/_react.default.createElement("button", {
+  }, buttonText1), /*#__PURE__*/_react.default.createElement("button", {
     type: "button",
     className: "modal-close-button2",
     onClick: hideModal
-  }, "Cancel"))))));
+  }, buttonText2))))));
 };
 exports.Modal = Modal;
 Modal.propTypes = {

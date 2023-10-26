@@ -3,7 +3,7 @@ import "./Modal.css";
 import PropTypes from "prop-types";
 import { FaTimes } from "react-icons/fa";
 
-export const Modal = ({ showModal, hideModal }) => {
+export const Modal = ({ showModal, hideModal, title, message, buttonText1, buttonText2}) => {
   return (
     showModal && (
       <>
@@ -11,7 +11,7 @@ export const Modal = ({ showModal, hideModal }) => {
           <div className="modal-wrapper">
             <div className="modal">
               <div className="modal-header">
-                <h3>Enter your modal title here</h3>
+                <h3>{title}</h3>
                 <button
                   type="button"
                   className="modal-close-button"
@@ -20,21 +20,21 @@ export const Modal = ({ showModal, hideModal }) => {
                   <FaTimes />
                 </button>
               </div>
-              <div className="modal-body">Hello, your message here</div>
+              <div className="modal-body">{message}</div>
               <div className="modal-footer">
                 <button
                   type="button"
                   className="modal-close-button1"
                   onClick={hideModal}
                 >
-                  Ok
+                  {buttonText1}
                 </button>
                 <button
                   type="button"
                   className="modal-close-button2"
                   onClick={hideModal}
                 >
-                  Cancel
+                  {buttonText2}
                 </button>
               </div>
             </div>

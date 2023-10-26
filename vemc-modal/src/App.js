@@ -13,6 +13,10 @@ function App() {
       <Modal
         showModal={displayModal}
         hideModal={() => setDisplayModal(false)}
+        title="Enter your modal title here" 
+        message="Hello, your message here"
+        buttonText1='Ok' 
+        buttonText2='Cancel'
       />
     </div>
   );
