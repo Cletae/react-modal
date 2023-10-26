@@ -24,6 +24,18 @@ Run the following command:
 
 ```
 <Modal
+    modalStyle={modalStyle}
+    modalHeaderStyle={modalHeaderStyle}
+    titleStyle={titleStyle}
+    modalBodyStyle={modalBodyStyle}
+    modalFooterStyle={modalFooterStyle}
+    xButtonStyle={xButtonStyle}
+    footerButton1Style={footerButton1Style}
+    footerButton2Style={footerButton2Style}
+    title="Enter your modal title here"
+    message="Hello, your message here"
+    buttonText1="Ok"
+    buttonText2="Cancel"
     showModal={displayModal}
     hideModal={()=>setDisplayModal(false)}
 />
