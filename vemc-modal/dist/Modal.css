@@ -1,0 +1,78 @@
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+    background-color: rgba(122, 121, 121, 0.5);
+}
+
+.modal-wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.modal {
+    background: white;
+    margin: auto;
+    border-radius: 10px;
+    max-width: 765px;
+    width: 100%;
+    padding: 1.5rem;
+    border: 1px solid white;
+}
+
+.modal-header {
+    display: flex;
+    font-size: 1.5rem;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.2rem 0.5rem 3.5rem;
+}
+
+h3 {
+    font-size: 45px;
+}
+
+.modal-close-button {
+    font-size: 2.5rem;
+    color: rgb(39, 39, 39);
+    cursor: pointer;
+    border: none;
+    background: transparent;
+}
+.modal-body{
+    font-size: 40px;
+    color: red;
+    text-align: center;
+}
+.modal-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+    margin-top: 5rem;
+}
+.modal-close-button1{
+    background: white;
+    color: black;
+    width: 20%;
+    cursor: pointer;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    border: 1px solid rgb(39, 39, 39);
+    font-size: 25px;
+}
+.modal-close-button2{
+    background: white;
+    color: black;
+    width: 50%;
+    cursor: pointer;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    border: 1px solid rgb(39, 39, 39);
+    font-size: 25px;
+}
