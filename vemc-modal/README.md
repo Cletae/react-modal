@@ -14,7 +14,7 @@ Run the following command:
 
 **1 - Import the pluggin :**
 
-`import {Modal} from "modal"`
+`import {Modal} from "vemc-modal"`
 
 **2 - Use this state :**
 
